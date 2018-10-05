@@ -130,6 +130,9 @@
     .patience {
         font-size: 36px;
     }
+    .btn button {
+        width: 23%;
+    }
     .equities p:last-child span {
         font-size: 8px;
     }
@@ -179,7 +182,7 @@
         height: 980px;
     }
     
-    .header_div ul li:last-child{
+    .header_div button{
         display: block;
     }
     .header_div ul li{
