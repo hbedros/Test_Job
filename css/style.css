@@ -19,6 +19,7 @@ a:hover {text-decoration:underline; border-bottom-style: solid;}
 header{
     background: #1E9BD7;
 }
+
 .header_div ul li:last-child{
     display: none;
     font-size: 26px;
