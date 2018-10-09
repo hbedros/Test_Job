@@ -8,6 +8,24 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <script>
+       function func() {
+           
+            var x = document.getElementById("myDIV");
+            if (x.style.display == "none") {
+                x.style.display = "block";
+                
+        var sheet = document.createElement('style')
+sheet.innerHTML = "header {height: 220px;}";
+document.body.appendChild(sheet);
+            } else {
+                x.style.display = "none";
+                var sheet = document.createElement('style')
+sheet.innerHTML = "header {height: 100px;}";
+document.body.appendChild(sheet);
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -16,16 +34,16 @@
                 <p>AB | German & Austrian Financial Professionals</p>
             </div>
     </div>
-        <div class="header_div toggle_div">
+        <div class="header_div toggle_div" >
             <img src="image/ab_bernstein_logo_detail.png" alt="logo">
-            <button  class="toggle"><i class="fas fa-bars"></i></button>
-                    <ul>
-                            <li><a href="">products</a></li>
-                            <li><a href="">resources</a></li>
-                            <li><a href="">team</a></li>
-                            <li><a href="">insights</a></li>
-                            <li><a href="">about us</a></li>
-                            <li><button><i class="fas fa-search"></i></button></li>
+            <button  onclick="func()" class="icon"><i class="fas fa-bars"></i></button>
+                    <ul id='myDIV'>
+                            <li ><a href="">products</a></li>
+                            <li ><a href="">resources</a></li>
+                            <li ><a href="">team</a></li>
+                            <li ><a href="">insights</a></li>
+                            <li ><a href="">about us</a></li>
+                            <li ><button><i class="fas fa-search"></i></button></li>
                         </ul>
         </div>
         </div>
@@ -191,7 +209,5 @@
             </ul>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
 </body>
 </html>
